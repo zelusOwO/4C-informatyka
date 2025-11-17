@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+ 
+// -------------------------------------------------------
+// Funkcja realizująca algorytm – oblicza silnię z liczby n
+// -------------------------------------------------------
+long long silnia(int n) {
+    long long wynik = 1;
+    for (int i = 1; i <= n; i++) {
+        wynik *= i;
+    }
+    return wynik;
+}
+ 
+int main() {
+    int n;
+ 
+    // ----------------------------------------------
+    // Prezentacja działania programu – pobranie danych
+    // ----------------------------------------------
+    cout << "Podaj liczbe n: ";
+    cin >> n;
+ 
+    // ----------------------------------------------
+    // Wywołanie funkcji i prezentacja wyniku
+    // ----------------------------------------------
+    long long wynik = silnia(n);
+ 
+    cout << "Silnia z " << n << " wynosi: " << wynik << endl;
+ 
+    return 0;
+}
